@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    min-height: 100vh;
+    background-color: #0f172a;
+    color: #f1f5f9;
+    transition-property: color, background-color;
+    transition-duration: 200ms;
+  }
+  body.dark {
+    background-color: #0f172a;
+    color: #f9fafb;
+  }
+}
+
+@layer components {
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content {
+    flex-grow: 1;
+  }
+
+  .app-footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #94a3b8;
+  }
+
+  .dark .app-footer {
+    color: #94a3b8;
+  }
+
+  .card {
+    background-color: #1e293b;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    transition-property: all;
+    transition-duration: 200ms;
+    color: white;
+  }
+  
+  .dark .card {
+    background-color: #1e293b;
+  }
+  
+  .btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition-property: color, background-color;
+    transition-duration: 200ms;
+  }
+  
+  .btn-primary {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2563eb;
+  }
+  
+  .btn-secondary {
+    background-color: #8b5cf6;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #7c3aed;
+  }
+  
+  .btn-outline {
+    border: 1px solid #475569;
+    color: white;
+  }
+  
+  .btn-outline:hover {
+    background-color: #334155;
+  }
+  
+  .dark .btn-outline {
+    border-color: #475569;
+  }
+  
+  .dark .btn-outline:hover {
+    background-color: #334155;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #475569;
+    background-color: #0f172a;
+    color: white;
+    transition-property: all;
+    transition-duration: 200ms;
+  }
+  
+  .input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  }
+  
+  .dark .input {
+    border-color: #475569;
+    background-color: #0f172a;
+  }
+  
+  .dark .input:focus {
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  }
+
+  /* Additional utility classes */
+  .w-full {
+    width: 100%;
+  }
+
+  .max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .space-y-6 > * + * {
+    margin-top: 1.5rem;
+  }
+
+  .space-y-2 > * + * {
+    margin-top: 0.5rem;
+  }
+
+  .h-40 {
+    height: 10rem;
+  }
+
+  .min-h-\[150px\] {
+    min-height: 150px;
+  }
+
+  .resize-y {
+    resize: vertical;
+  }
+
+  .text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .font-bold {
+    font-weight: 700;
+  }
+
+  .font-medium {
+    font-weight: 500;
+  }
+
+  .text-gray-800 {
+    color: #1f2937;
+  }
+
+  .text-gray-700 {
+    color: #374151;
+  }
+
+  .text-gray-300 {
+    color: #d1d5db;
+  }
+
+  .dark .text-white {
+    color: #ffffff;
+  }
+
+  .dark .text-gray-300 {
+    color: #d1d5db;
+  }
+
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .mt-4 {
+    margin-top: 1rem;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .h-12 {
+    height: 3rem;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .gap-2 {
+    gap: 0.5rem;
+  }
+
+  .rounded-full {
+    border-radius: 9999px;
+  }
+
+  .px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .bg-blue-500 {
+    background-color: #3b82f6;
+  }
+
+  .text-white {
+    color: #ffffff;
+  }
+
+  .bg-gray-200 {
+    background-color: #e5e7eb;
+  }
+
+  .dark .bg-gray-700 {
+    background-color: #374151;
+  }
+
+  .text-gray-800 {
+    color: #1f2937;
+  }
+
+  .dark .text-gray-200 {
+    color: #e5e7eb;
+  }
+
+  .cursor-wait {
+    cursor: wait;
+  }
+}
