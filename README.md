@@ -2,8 +2,7 @@
 
 A minimalist mental wellness journaling app that allows users to track daily moods, write reflections, and visualize emotional trends through a clean, interactive, and calming UI.
 
-![NeuroSpace](https://via.placeholder.com/1200x630?text=NeuroSpace+-+Mental+Wellness+Journal)
-
+Hosted: https://emotions-driver.vercel.app/
 ## ✨ Features
 
 - 🎭 **Mood Tracking**: Track your daily mood with an intuitive emoji-based selector
