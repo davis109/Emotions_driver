@@ -2,7 +2,6 @@
 
 A minimalist mental wellness journaling app that allows users to track daily moods, write reflections, and visualize emotional trends through a clean, interactive, and calming UI.
 
-Hosted: https://emotions-driver.vercel.app/
 ## ✨ Features
 
 - 🎭 **Mood Tracking**: Track your daily mood with an intuitive emoji-based selector
